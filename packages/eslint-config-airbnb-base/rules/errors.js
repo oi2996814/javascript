@@ -26,6 +26,11 @@ module.exports = {
     // disallow use of console
     'no-console': 'warn',
 
+    // Disallows expressions where the operation doesn't affect the value
+    // https://eslint.org/docs/rules/no-constant-binary-expression
+    // TODO: semver-major, enable
+    'no-constant-binary-expression': 'off',
+
     // disallow use of constant expressions in conditions
     'no-constant-condition': 'warn',
 
@@ -99,6 +104,11 @@ module.exports = {
 
     // disallow the use of object properties of the global object (Math and JSON) as functions
     'no-obj-calls': 'error',
+
+    // Disallow new operators with global non-constructor functions
+    // https://eslint.org/docs/latest/rules/no-new-native-nonconstructor
+    // TODO: semver-major, enable
+    'no-new-native-nonconstructor': 'off',
 
     // Disallow returning values from Promise executor functions
     // https://eslint.org/docs/rules/no-promise-executor-return
